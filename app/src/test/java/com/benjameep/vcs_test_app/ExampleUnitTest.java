@@ -3,7 +3,6 @@ package com.benjameep.vcs_test_app;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -14,9 +13,6 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
-        assertEquals(10, 2 *5);
+        assertEquals(0, 1 - 2);
     }
-
-
-
 }
