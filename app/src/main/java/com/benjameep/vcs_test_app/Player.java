@@ -9,15 +9,19 @@ public class Player {
     private Property[] props;
     private int value;
 
-    public void addProp(Property prop) {
+    public boolean hasProp(int propID){
+        // look through our properties to see if we have the property
+        return false;
+    }
+    public void addProp(int propID) {
 
     }
 
-    public void removeProp(Property prop) {
+    public void removeProp(int propID) {
 
     }
 
-    public void updateDev(Property prop, int upDev) {
+    public void updateDev(int propID, boolean isUpgrade) {
 
     }
 }

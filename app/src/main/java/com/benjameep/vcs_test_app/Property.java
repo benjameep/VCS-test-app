@@ -5,4 +5,7 @@ package com.benjameep.vcs_test_app;
  */
 
 public class Property {
+    public void updateDev(boolean isUpgrade){
+
+    }
 }
