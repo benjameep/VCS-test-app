@@ -6,4 +6,7 @@ package com.benjameep.vcs_test_app;
 
 public class Player {
 
+    private Property[] props;
+    private int value;
+    
 }
