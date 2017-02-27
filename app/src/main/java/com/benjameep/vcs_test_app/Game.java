@@ -5,5 +5,18 @@ package com.benjameep.vcs_test_app;
  */
 
 public class Game {
+    private Player[] players;
 
+    public void addProp(Player player,Property prop){
+
+    }
+    public void removeProp(Player player,Property prop){
+
+    }
+    public void updateDev(Player player,Property prop,int dev){
+
+    }
+    public void updatePlayersValue(){
+
+    }
 }
