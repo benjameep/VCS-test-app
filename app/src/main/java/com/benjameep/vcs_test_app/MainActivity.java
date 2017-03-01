@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     public static final String PREFS_NAME = "MyPrefsFile";
+    public static final String NUM_PLAYERS_KEYWORD = "numPlayers";
+    private Game game;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
         // get data from savedPrefs
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-//        boolean silent = settings.getBoolean("silentMode", false);
-//        setSilent(silent);
+        int numPlayers = settings.getInt(NUM_PLAYERS_KEYWORD,4);
+        this.game = new Game(numPlayers);
     }
 
         @Override
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             // save data to savedPrefs
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             SharedPreferences.Editor editor = settings.edit();
-//            editor.putBoolean("silentMode", mSilentMode);
+            editor.putInt(NUM_PLAYERS_KEYWORD, this.game.getNumPlayers());
 
             // Commit the edits!
             editor.commit();

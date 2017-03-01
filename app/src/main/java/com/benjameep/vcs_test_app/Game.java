@@ -4,6 +4,17 @@ public class Game {
 
     private Player[] players;
 
+    public Game(int numPlayers) {
+        this.players = new Player[numPlayers];
+        for(int i = 0; i < numPlayers; i++){
+            this.players[i] = new Player();
+        }
+    }
+
+    public int getNumPlayers(){
+        return this.players.length;
+    }
+
     private int findOwner(int propID){
         // loop through all the players to find who has the property
         return -1; // return the playerID if we find it, else return -1
