@@ -5,7 +5,29 @@ package com.benjameep.vcs_test_app;
  */
 
 public class Property {
-    public void updateDev(boolean isUpgrade){
+    private int[] brothers;
 
+    private int dev;
+
+    public Property(int propID) {
+    }
+
+    public int[] getBrothers() {
+        return brothers;
+    }
+
+    public int getDev() {
+        return dev;
+    }
+
+    public void setDev(int dev) {
+        this.dev = dev;
+    }
+
+    public void upgrade(){
+        dev++;
+    }
+    public void downgrade(){
+        dev--;
     }
 }
