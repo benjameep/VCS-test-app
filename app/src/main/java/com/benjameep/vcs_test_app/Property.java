@@ -5,9 +5,20 @@ package com.benjameep.vcs_test_app;
  */
 
 public class Property {
-    private int dev;
+
     private int values;
 
+
+    private int[] brothers;
+
+    private int dev;
+
+    public Property(int propID) {
+    }
+
+    public int[] getBrothers() {
+        return brothers;
+    }
 
     public int getDev() {
         return dev;
@@ -17,12 +28,21 @@ public class Property {
         this.dev = dev;
     }
 
+
     public int getValues() {
         return values;
     }
 
     public void setValues(int values) {
         this.values = values;
+    }
+
+
+    public void upgrade(){
+        dev++;
+    }
+    public void downgrade(){
+        dev--;
     }
 
 }

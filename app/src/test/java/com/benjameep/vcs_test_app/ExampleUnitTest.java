@@ -14,8 +14,5 @@ public class ExampleUnitTest {
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
         int[] array = {1,2,3};
-        assertEquals(6, myfunction.addUp(array));
-        assertEquals(720, myfunction.factorial(6));
-        assertEquals(46656, myfunction.powerUp(6));
     }
 }
