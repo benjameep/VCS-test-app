@@ -6,39 +6,28 @@ package com.benjameep.vcs_test_app;
 
 public class Property {
 
-    private int values;
+    private int value;
     private int[] brothers;
 
     private int dev;
 
     public Property(int propID) {
+        // read the Json file for it's data
     }
-
-    public int[] getBrothers() {
-        return brothers;
-    }
-
-    public int getDev() {
-        return dev;
-    }
-
-    public void setDev(int dev) {
-        this.dev = dev;
-    }
-
-    public int getValues() {
-        return values;
-    }
-
-    public void setValues(int values) {
-        this.values = values;
-    }
-
+    public int getValue() { return value; }
+    public int[] getBrothers() { return brothers; }
+    public int getDev() { return dev; }
+    public void setDev(int dev) { this.dev = dev; }
+    public boolean isMaxed(){ return this.dev == 5; }
+    public boolean isMinimum(){ return this.dev == -1; }
     public void upgrade(){
-        dev++;
+        if(!this.isMaxed()){
+            this.dev++;
+        }
     }
     public void downgrade(){
-        dev--;
+        if(!this.isMinimum()){
+            this.dev--;
+        }
     }
-
 }

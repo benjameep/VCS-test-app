@@ -26,7 +26,11 @@ public class Game {
         // if someone actually owns this property
         if(owner != -1){
             // pass on the request to the player
-            this.players[owner].updateDev(propID,isUpgrade);
+            if(isUpgrade){
+                this.players[owner].upgradeProp(propID);
+            } else {
+                this.players[owner].downgradeProp(propID);
+            }
         } else {
             // throw an exception
             throw new Exception("Tried to update a property no one owns");
