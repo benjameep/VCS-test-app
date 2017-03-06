@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             int numPlayers = settings.getInt(NUM_PLAYERS_KEYWORD,4);
             this.game = new Game(numPlayers);
+
+            log.d()
         }
 
         @Override
@@ -35,20 +37,19 @@ public class MainActivity extends AppCompatActivity {
             editor.commit();
         }
 
-        public String loadJSONFromAsset() {
-            String json = null;
-            try {
-                InputStream is = getActivity().getAssets().open("numbers.json");
-                int size = is.available();
-                byte[] buffer = new byte[size];
-                is.read(buffer);
-                is.close();
-                json = new String(buffer, "UTF-8");
-            } catch (java.io.IOException ex) {
-                ex.printStackTrace();
-                return null;
-            }
-            return json;
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("numbers.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (java.io.IOException ex) {
+            ex.printStackTrace();
+            return null;
         }
+        return json;
+    }
 }
-d
