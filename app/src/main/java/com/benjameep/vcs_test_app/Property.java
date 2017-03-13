@@ -6,28 +6,41 @@ package com.benjameep.vcs_test_app;
 
 public class Property {
 
-    private int value;
-    private int[] brothers;
+    private Data _data;
+    private int _dev;
 
-    private int dev;
-
-    public Property(int propID) {
-        // read the Json file for it's data
+    public Property(Data propData) {
+        _data = propData;
+        this.setSingle();
     }
-    public int getValue() { return value; }
-    public int[] getBrothers() { return brothers; }
-    public int getDev() { return dev; }
-    public void setDev(int dev) { this.dev = dev; }
-    public boolean isMaxed(){ return this.dev == 5; }
-    public boolean isMinimum(){ return this.dev == -1; }
+    public int[] getBrothers() { return _data._bros; }
+    public int getDev() { return _dev; }
+    public void setSingle() { _dev = -1; };
+    public boolean isMaxed(){ return _dev >= 5; }
+    public boolean isMinimum(){ return _dev <= -1; }
     public void upgrade(){
         if(!this.isMaxed()){
-            this.dev++;
+            _dev++;
         }
     }
-    public void downgrade(){
-        if(!this.isMinimum()){
-            this.dev--;
+    public void downgrade() {
+        if (!this.isMinimum()) {
+            _dev--;
         }
+    }
+    public double getValue(double intensity) {
+        // Intensity is a number from 0 to 1
+        // 1 means that people stay in jail long
+        // 0 means that people stay in jail short
+        double weightedLong = _data._long[this.adjustedDev()] * intensity;
+        double weightedShort = _data._short[this.adjustedDev()] * (1 - intensity);
+        return weightedLong + weightedShort;
+    }
+
+    private int adjustedDev(){
+        // -1 maps to 6 and everything else should stay the same
+        // [0h,1h,2h,3h,4h,Hotel,Single]
+        // [ 0, 1, 2, 3, 4,  5  ,  -1  ]
+        return (7 + _dev)%7;
     }
 }
