@@ -5,13 +5,8 @@ package com.benjameep.vcs_test_app;
  */
 
 public class Data {
-    private int[] _bros;
-    private double[] _short;
-    private double[] _long;
-
-    public Data(int[] _bros, double[] _short, double[] _long) {
-        this._bros = _bros;
-        this._short = _short;
-        this._long = _long;
-    }
+    int[] _bros;
+    String _name;
+    double[] _short;
+    double[] _long;
 }
