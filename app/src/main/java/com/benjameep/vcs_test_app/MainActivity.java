@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             // Load json Data from 'numbers.json'
             Gson gson = new GsonBuilder().create();
-            Data[] _jsonData = gson.fromJson(loadJSONFromAsset(), Data[].class);
+            Data[] _jsonData = gson.fromJson(loadJSONFromAsset("numbers.json"), Data[].class);
 
             // Initalize Our game
             this.game = new Game(numPlayers,_jsonData);
@@ -61,10 +61,14 @@ public class MainActivity extends AppCompatActivity {
             editor.commit();
         }
 
-        public String loadJSONFromAsset() {
+    /**
+     * Passed the file's name and read it into a string.
+     * @return
+     */
+        public String loadJSONFromAsset(String File_name) {
             String json;
             try {
-                InputStream is = getAssets().open("numbers.json");
+                InputStream is = getAssets().open(File_name);
                 int size = is.available();
                 byte[] buffer = new byte[size];
                 is.read(buffer);
