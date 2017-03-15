@@ -3,7 +3,11 @@ package com.benjameep.vcs_test_app;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,15 +15,26 @@ public class MainActivity extends AppCompatActivity {
         public static final String NUM_PLAYERS_KEYWORD = "numPlayers";
         private Game game;
 
+    private static final String TAG = MainActivity.class.getSimpleName();
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
+            if (savedInstanceState != null) {
+                Log.d(TAG, "onCreate() Restoring previous state");
+            /* restore state */
+            } else {
+                Log.d(TAG, "onCreate() No saved state available");
+            /* initialize app */
+            }
+
 
             // get data from savedPrefs
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             int numPlayers = settings.getInt(NUM_PLAYERS_KEYWORD,4);
             this.game = new Game(numPlayers);
+
         }
 
         @Override
@@ -30,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             SharedPreferences.Editor editor = settings.edit();
             editor.putInt(NUM_PLAYERS_KEYWORD, this.game.getNumPlayers());
-
             // Commit the edits!
             editor.commit();
         }
@@ -38,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         public String loadJSONFromAsset() {
             String json = null;
             try {
-                InputStream is = getActivity().getAssets().open("yourfilename.json");
+                InputStream is = getAssets().open("numbers.json");
                 int size = is.available();
                 byte[] buffer = new byte[size];
                 is.read(buffer);
