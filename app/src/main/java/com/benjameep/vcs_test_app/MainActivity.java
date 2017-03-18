@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
             // Initalize Our game
             this.game = new Game(numPlayers,_jsonData);
 
+            this.game.addProp(0,0);
+            this.game.updatePlayersBalance();
+
         }
 
         @Override

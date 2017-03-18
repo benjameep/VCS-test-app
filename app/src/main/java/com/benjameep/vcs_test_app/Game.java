@@ -1,5 +1,7 @@
 package com.benjameep.vcs_test_app;
 
+import android.util.Log;
+
 /**
  * Manages all the players
  */
@@ -105,6 +107,7 @@ public class Game {
         this.updateTotalProfits();
         for(Player player: _players){
             player.setBalance((player.getValue() * _players.length) - _totalProfits);
+            Log.d("Player's Balance: ", String.valueOf(player.getBalance()));
         }
     }
 
