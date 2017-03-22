@@ -35,7 +35,8 @@
                 android:id="@+id/button"
                 android:layout_width="352dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Button"
+                android:orientation="horizontal"/>
 
         </LinearLayout>
 
