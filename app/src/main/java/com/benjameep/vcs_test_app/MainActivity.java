@@ -38,16 +38,19 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
             int numPlayers = settings.getInt(NUM_PLAYERS_KEYWORD,4);
 
-            Log.d("numPlayers",Integer.toString(numPlayers));
+            Log.v("Number of Players",Integer.toString(numPlayers));
 
             // Load json Data from 'numbers.json'
             Gson gson = new GsonBuilder().create();
             Data[] _jsonData = gson.fromJson(loadJSONFromAsset("numbers.json"), Data[].class);
 
+            Log.v("Json Data loaded", String.valueOf(_jsonData.length));
+
             // Initalize Our game
             this.game = new Game(numPlayers,_jsonData);
 
             this.game.addProp(0,0);
+            Log.d("Game",gson.toJson(this.game));
             this.game.updatePlayersBalance();
 
         }

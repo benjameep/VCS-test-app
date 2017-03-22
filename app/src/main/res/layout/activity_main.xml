@@ -11,77 +11,359 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.benjameep.vcs_test_app.MainActivity">
 
-    <GridLayout
+    <LinearLayout
+        android:id="@+id/BottomRow"
         android:layout_width="match_parent"
+        android:layout_height="@dimen/row_width"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/row_width">
+
+        <RelativeLayout
+            android:id="@+id/prop-0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_blue_bright" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_blue_bright" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-2"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_blue_bright" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-3"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-4"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_purple" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-5"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_purple" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LeftColumn"
+        android:layout_width="@dimen/row_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/row_width">
+
+        <RelativeLayout
+            android:id="@+id/prop-6"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-7"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-8"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-9"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-10"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-11"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_light" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-12"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-13"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_light" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TopRow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_width"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:id="@+id/prop-14"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-15"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-16"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_red_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-17"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-18"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-19"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-20"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-21"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/valley_space"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_orange_dark" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RightColumn"
+        android:layout_width="@dimen/row_width"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/row_width"
+        android:layout_marginTop="@dimen/row_width"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/LeftColumn"
+        <RelativeLayout
+            android:id="@+id/prop-22"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp">
-
-                <ImageView
-                    android:id="@+id/prop1"
-                    android:layout_width="100dp"
-                    android:layout_height="20dp"
-                    android:layout_weight=".3"
-                    app:srcCompat="@android:color/holo_red_dark" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp">
-
-                <ImageView
-                    android:id="@+id/prop2"
-                    android:layout_width="100dp"
-                    android:layout_height="20dp"
-                    android:layout_weight=".3"
-                    app:srcCompat="@android:color/holo_red_dark" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/BottomRow"
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_green_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-23"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:orientation="horizontal">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/RightColumn"
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_green_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-24"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:orientation="vertical">
-
-        </LinearLayout>
-
-        <LinearLayout
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_green_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-25"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:id="@+id/TopRow">
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_white" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-26"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_blue_dark" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/prop-27"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/valley_space"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/holo_blue_dark" />
+        </RelativeLayout>
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </GridLayout>
 </RelativeLayout>

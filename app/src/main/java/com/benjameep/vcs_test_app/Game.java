@@ -78,6 +78,8 @@ public class Game {
     public void addProp(int playerID,int propID){
         // gives a property to a player
 
+        Log.v("addProp()","player#"+playerID+" prop#"+propID);
+
         int prevOwner = findOwner(propID);
         if(prevOwner == playerID){
             // do nothing, person already owns it
