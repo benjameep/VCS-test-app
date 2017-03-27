@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="prop_background">#c6c6c6</color>
+
+    <color name="purple_header">#9f45cf</color>
+    <color name="light_blue_header">#45bdcf</color>
+    <color name="magenta_header">#cf45c4</color>
+    <color name="orange_header">#cf7f45</color>
+    <color name="red_header">#cf4545</color>
+    <color name="yellow_header">#cdcf45</color>
+    <color name="green_header">#47cf45</color>
+    <color name="dark_blue_header">#454acf</color>
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>

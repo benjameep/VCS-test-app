@@ -22,7 +22,7 @@
         android:orientation="horizontal">
 
         <RelativeLayout
-            android:id="@+id/prop-0"
+            android:id="@+id/prop_0"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
@@ -31,10 +31,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/ic_property" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/light_blue_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-1"
+            android:id="@+id/prop_1"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
@@ -42,10 +47,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_blue_bright" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/light_blue_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-2"
+            android:id="@+id/prop_2"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
@@ -53,34 +63,36 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_blue_bright" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/light_blue_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-3"
+            android:id="@+id/prop_3"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_train"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:tint="@color/colorAccent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-4"
+            android:id="@+id/prop_4"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
@@ -88,10 +100,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_purple" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/purple_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-5"
+            android:id="@+id/prop_5"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
@@ -99,8 +115,12 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_purple" />
-        </RelativeLayout>-->
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/purple_header" />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -113,7 +133,7 @@
         android:layout_marginTop="@dimen/row_width">
 
         <RelativeLayout
-            android:id="@+id/prop-6"
+            android:id="@+id/prop_6"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -122,10 +142,16 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/orange_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-7"
+            android:id="@+id/prop_7"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -134,10 +160,16 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/orange_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-8"
+            android:id="@+id/prop_8"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -146,19 +178,28 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/orange_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-9"
+            android:id="@+id/prop_9"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_train"
@@ -166,16 +207,9 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-10"
+            android:id="@+id/prop_10"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -183,10 +217,16 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_light" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/magenta_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-11"
+            android:id="@+id/prop_11"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -194,16 +234,28 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_light" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/magenta_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-12"
+            android:id="@+id/prop_12"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_electric"
@@ -211,13 +263,9 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-13"
+            android:id="@+id/prop_13"
             android:layout_width="match_parent"
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
@@ -225,7 +273,13 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_light" />
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/magenta_header" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -238,7 +292,7 @@
         android:layout_alignParentLeft="true">
 
         <RelativeLayout
-            android:id="@+id/prop-14"
+            android:id="@+id/prop_14"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -246,10 +300,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/red_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-15"
+            android:id="@+id/prop_15"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -257,10 +316,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/red_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-16"
+            android:id="@+id/prop_16"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -268,16 +332,27 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_red_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/red_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-17"
+            android:id="@+id/prop_17"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_train"
@@ -285,13 +360,9 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-18"
+            android:id="@+id/prop_18"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -300,10 +371,15 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/yellow_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-19"
+            android:id="@+id/prop_19"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -312,25 +388,37 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/yellow_header" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_1house"
+                android:rotation="180"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-20"
+            android:id="@+id/prop_20"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_water"
@@ -338,13 +426,9 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-21"
+            android:id="@+id/prop_21"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
@@ -353,7 +437,12 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_height="@dimen/prop_header_size"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/yellow_header" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -369,7 +458,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/prop-22"
+            android:id="@+id/prop_22"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
@@ -377,10 +466,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_green_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/green_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-23"
+            android:id="@+id/prop_23"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
@@ -388,10 +481,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_green_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/green_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-24"
+            android:id="@+id/prop_24"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
@@ -399,16 +496,26 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_green_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/green_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-25"
+            android:id="@+id/prop_25"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/prop_background" />
+
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_train"
@@ -416,13 +523,9 @@
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginRight="10dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-26"
+            android:id="@+id/prop_26"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
@@ -430,10 +533,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_blue_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/dark_blue_header" />
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/prop-27"
+            android:id="@+id/prop_27"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="@dimen/valley_space"
@@ -441,7 +548,11 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_blue_dark" />
+                app:srcCompat="@drawable/prop_background" />
+            <ImageView
+                android:layout_width="@dimen/prop_header_size"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/dark_blue_header" />
         </RelativeLayout>
 
     </LinearLayout>
