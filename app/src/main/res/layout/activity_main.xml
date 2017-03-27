@@ -94,8 +94,8 @@
         android:layout_width="@dimen/row_width"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/row_width">
 
         <RelativeLayout
