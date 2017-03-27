@@ -15,22 +15,23 @@
         android:id="@+id/BottomRow"
         android:layout_width="match_parent"
         android:layout_height="@dimen/row_width"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginLeft="@dimen/row_width">
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/row_width"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:id="@+id/prop-0"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/valley_space"
-            android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_blue_bright" />
+                app:srcCompat="@drawable/ic_property" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-1"
@@ -60,10 +61,23 @@
             android:layout_marginTop="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_train"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
+                android:tint="@color/colorAccent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-4"
@@ -86,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:color/holo_purple" />
-        </RelativeLayout>
+        </RelativeLayout>-->
     </LinearLayout>
 
     <LinearLayout
@@ -104,10 +118,11 @@
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                app:srcCompat="@android:color/holo_orange_dark" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-7"
@@ -115,10 +130,11 @@
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                app:srcCompat="@android:color/holo_orange_dark" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-8"
@@ -126,10 +142,14 @@
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_light" />
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@android:color/holo_orange_dark" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-9"
@@ -138,9 +158,21 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_train"
+                android:rotation="90"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_white" />
+                app:srcCompat="@android:color/holo_white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-10"
@@ -170,6 +202,15 @@
             android:layout_marginRight="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_electric"
+                android:rotation="90"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -236,6 +277,15 @@
             android:layout_width="0dp"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_train"
+                android:rotation="180"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:color/holo_white" />
@@ -246,10 +296,11 @@
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@android:color/holo_orange_light" />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-19"
@@ -257,10 +308,20 @@
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@android:color/holo_orange_light" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_1house"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop-20"
@@ -268,6 +329,15 @@
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_water"
+                android:rotation="180"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -279,10 +349,11 @@
             android:layout_marginBottom="@dimen/valley_space"
             android:layout_width="0dp"
             android:layout_weight="1">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:color/holo_orange_dark" />
+                app:srcCompat="@android:color/holo_orange_light" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -336,6 +407,15 @@
             android:layout_marginLeft="@dimen/valley_space"
             android:layout_height="0dp"
             android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_train"
+                android:rotation="270"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
