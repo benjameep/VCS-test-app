@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-        @Override
+      @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
             this.game.addProp(0,0);
             Log.d("Game",gson.toJson(this.game));
-            this.game.updatePlayersBalance();
+            //this.game.updatePlayersBalance();
 
         }
 
