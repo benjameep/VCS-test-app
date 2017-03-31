@@ -206,7 +206,7 @@
                 android:rotation="90"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="30dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop_10"
@@ -262,7 +262,7 @@
                 android:rotation="90"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginTop="10dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop_13"
@@ -522,7 +522,7 @@
                 android:rotation="270"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginTop="10dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop_26"
