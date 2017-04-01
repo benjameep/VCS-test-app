@@ -1,7 +1,5 @@
 package com.benjameep.vcs_test_app;
 
-import android.util.Log;
-
 /**
  * Manages all the players
  */
@@ -28,6 +26,7 @@ public class Game {
             _players[i] = new Player();
         }
         _data = jsonData;
+		
     }
     public int getNumPlayers(){
         return _players.length;
@@ -55,7 +54,7 @@ public class Game {
      * @throws Exception
      */
     public void updateDev(int propID,boolean isUpgrade) throws Exception {
-        int owner = findOwner(propID);
+		int owner = findOwner(propID);
         // if someone actually owns this property
         if(owner != -1){
             // pass on the request to the player
@@ -78,7 +77,7 @@ public class Game {
     public void addProp(int playerID,int propID){
         // gives a property to a player
 
-        Log.v("addProp()","player#"+playerID+" prop#"+propID);
+        
 
         int prevOwner = findOwner(propID);
         if(prevOwner == playerID){
@@ -86,7 +85,7 @@ public class Game {
             return;
         } else if (prevOwner != -1){
             // take this property away from whoever used to own it
-            this.removeProp(prevOwner,propID);
+            this.removeProp(propID);
         }
         // pass on the request to the player with the corresponding jsonData
         _players[playerID].addProp(propID,_data[propID]);
@@ -97,8 +96,13 @@ public class Game {
       * @param playerID
      * @param propID
      */
-    public void removeProp(int playerID,int propID){
-        _players[playerID].removeProp(propID);
+    public void removeProp(int propID){
+		int owner = findOwner(propID);
+        // if someone actually owns this property
+        if(owner != -1){
+            // pass on the request to the player
+			_players[owner].removeProp(propID);
+        }
     }
 
     /**
@@ -109,7 +113,7 @@ public class Game {
         this.updateTotalProfits();
         for(Player player: _players){
             player.setBalance((player.getValue() * _players.length) - _totalProfits);
-            Log.d("Player's Balance: ", String.valueOf(player.getBalance()));
+            
         }
     }
 

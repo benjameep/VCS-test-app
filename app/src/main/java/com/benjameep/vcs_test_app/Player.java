@@ -68,7 +68,9 @@ public class Player {
         if(this.hasProps(_props[propID].getBrothers())){
             // then set them all to single
             for(int broID : _props[propID].getBrothers()){
-                _props[broID].setSingle();
+				if(_props[broID] != null){
+					_props[broID].setSingle();
+				}
             }
         }
         // remove from our list of properties
@@ -80,12 +82,15 @@ public class Player {
      * @param propID
      */
     public void upgradeProp(int propID){
+		
         for(int broID : _props[propID].getBrothers()){
-            // if this prop is already maxed out, or if it is already bigger than it's brother
-            if(_props[propID].isMaxed() || _props[propID].getDev() > _props[broID].getDev()){
-                // then upgrade the brother
-                _props[broID].upgrade();
-            }
+   			if(_props[broID] != null){
+				// if this prop is already maxed out, or if it is already bigger than it's brother
+				if(_props[propID].isMaxed() || _props[propID].getDev() > _props[broID].getDev()){
+					// then upgrade the brother
+					_props[broID].upgrade();
+				}
+   			} else { return; }
         }
         // Then finally upgrade the actual property
         _props[propID].upgrade();
@@ -95,13 +100,17 @@ public class Player {
      * passes on the request to the properties
      * @param propID
      */
-    public void downgradeProp(int propID) {
+    public void downgradeProp(int propID) throws Exception {
         for(int broID : _props[propID].getBrothers()) {
-            // if this prop is already it's minimum, or if it is already smaller than its brother
-            if (_props[propID].isMinimum() || _props[propID].getDev() < _props[broID].getDev()) {
-                // then downgrade the brother
-                _props[broID].downgrade();
-            }
+   			if(_props[broID] != null){
+				// if this prop is already it's minimum, or if it is already smaller than its brother
+				if (_props[propID].isMinimum() || _props[propID].getDev() < _props[broID].getDev()) {
+					// then downgrade the brother
+					_props[broID].downgrade();
+				}
+   			} else { 
+   				throw new Exception("Tried to downgrade a property that dosen't belong to a monopoly");
+   			}
         }
         // Then finally downgrade the actual property
         _props[propID].downgrade();
@@ -115,7 +124,9 @@ public class Player {
     public double updateValue(double intensity){
         _value = 0;
         for(Property prop: _props){
-            _value += prop.getValue(intensity);
+   			if(prop != null){
+				_value += prop.getValue(intensity);
+			}
         }
         return this.getValue();
     }

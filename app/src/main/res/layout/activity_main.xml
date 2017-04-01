@@ -565,42 +565,66 @@
         android:layout_below="@+id/TopRow"
         android:layout_toLeftOf="@id/RightColumn"
         android:layout_toRightOf="@+id/LeftColumn"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:id="@+id/topLeft"
-            android:layout_width="79dp"
-            android:layout_height="143dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true">
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/bottomLeft"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/topPlayers"
             android:layout_width="match_parent"
-            android:layout_height="138dp"
-            android:layout_below="@+id/topLeft">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/topLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/prop_background" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/bottomRight"
+            <RelativeLayout
+                android:id="@+id/bottomLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/prop_background" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/bottomPlayers"
             android:layout_width="match_parent"
-            android:layout_height="138dp">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bottomRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/prop_background" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/topRight"
-            android:layout_width="227dp"
-            android:layout_height="144dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="true">>
-
-        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/topRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/prop_background" />
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

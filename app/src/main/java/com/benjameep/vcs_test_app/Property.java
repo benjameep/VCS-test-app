@@ -21,7 +21,7 @@ public class Property {
     public int getDev() { return _dev; }
     public void setSingle() { _dev = -1; };
     public boolean isMaxed(){ return _dev >= 5; }
-    public boolean isMinimum(){ return _dev <= -1; }
+    public boolean isMinimum(){ return _dev <= 0; }
 
     /**
      * Upgrades the development if it can be.
@@ -47,6 +47,7 @@ public class Property {
      * @return
      */
     public double getValue(double intensity) {
+		
         // Intensity is a number from 0 to 1
         // 1 means that people stay in jail long
         // 0 means that people stay in jail short
