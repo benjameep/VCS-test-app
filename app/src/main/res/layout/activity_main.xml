@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FF29A2"
     tools:context="com.benjameep.vcs_test_app.MainActivity">
 
     <LinearLayout
@@ -395,15 +396,6 @@
                 android:layout_alignParentBottom="true"
                 app:srcCompat="@drawable/yellow_header" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_1house"
-                android:rotation="180"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginRight="10dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/prop_20"

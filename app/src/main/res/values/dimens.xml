@@ -5,5 +5,5 @@
     <dimen name="row_width">100dp</dimen>
     <dimen name="valley_space">23dp</dimen>
     <dimen name="prop_header_size">20dp</dimen>
-    <dimen name="border_size">2dp</dimen>
+    <dimen name="border_size">1dp</dimen>
 </resources>
